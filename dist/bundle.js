@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! leaflet/dist/leaflet.css */ \"./node_modules/leaflet/dist/leaflet.css\");\n/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! leaflet */ \"./node_modules/leaflet/dist/leaflet-src.js\");\n/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\n//L.Icon.Default.imagePath = '.';\r\n// OR\r\ndelete leaflet__WEBPACK_IMPORTED_MODULE_2__[\"Icon\"].Default.prototype._getIconUrl;\r\n\r\nleaflet__WEBPACK_IMPORTED_MODULE_2__[\"Icon\"].Default.mergeOptions({\r\n    iconRetinaUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon-2x.png */ \"./node_modules/leaflet/dist/images/marker-icon-2x.png\"),\r\n    iconUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon.png */ \"./node_modules/leaflet/dist/images/marker-icon.png\"),\r\n    shadowUrl: __webpack_require__(/*! leaflet/dist/images/marker-shadow.png */ \"./node_modules/leaflet/dist/images/marker-shadow.png\"),\r\n});\r\n\r\nvar startPoint = [14.0790606839815, 100.600900053978];\r\nvar map = leaflet__WEBPACK_IMPORTED_MODULE_2__[\"map\"]('map').setView(startPoint, 16);\r\n\r\n//Google\r\nleaflet__WEBPACK_IMPORTED_MODULE_2__[\"tileLayer\"]('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {\r\n    attribution: '&copy;',\r\n    minZoom: 2,\r\n    maxZoom: 20,\r\n    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']\r\n}).addTo(map);\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! leaflet/dist/leaflet.css */ \"./node_modules/leaflet/dist/leaflet.css\");\n/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! leaflet */ \"./node_modules/leaflet/dist/leaflet-src.js\");\n/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nvar startPoint = [14.0790606839815, 100.600900053978];\r\nvar map = leaflet__WEBPACK_IMPORTED_MODULE_2__[\"map\"]('map').setView(startPoint, 16);\r\n\r\n//Google\r\nleaflet__WEBPACK_IMPORTED_MODULE_2__[\"tileLayer\"]('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {\r\n    attribution: '&copy;',\r\n    minZoom: 2,\r\n    maxZoom: 20,\r\n    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']\r\n}).addTo(map);\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -166,17 +166,6 @@ eval("module.exports = __webpack_require__.p + \"a6137456ed160d7606981aa57c55989
 
 /***/ }),
 
-/***/ "./node_modules/leaflet/dist/images/marker-icon-2x.png":
-/*!*************************************************************!*\
-  !*** ./node_modules/leaflet/dist/images/marker-icon-2x.png ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"401d815dc206b8dc1b17cd0e37695975.png\";\n\n//# sourceURL=webpack:///./node_modules/leaflet/dist/images/marker-icon-2x.png?");
-
-/***/ }),
-
 /***/ "./node_modules/leaflet/dist/images/marker-icon.png":
 /*!**********************************************************!*\
   !*** ./node_modules/leaflet/dist/images/marker-icon.png ***!
@@ -185,17 +174,6 @@ eval("module.exports = __webpack_require__.p + \"401d815dc206b8dc1b17cd0e3769597
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"2273e3d8ad9264b7daa5bdbf8e6b47f8.png\";\n\n//# sourceURL=webpack:///./node_modules/leaflet/dist/images/marker-icon.png?");
-
-/***/ }),
-
-/***/ "./node_modules/leaflet/dist/images/marker-shadow.png":
-/*!************************************************************!*\
-  !*** ./node_modules/leaflet/dist/images/marker-shadow.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"44a526eed258222515aa21eaffd14a96.png\";\n\n//# sourceURL=webpack:///./node_modules/leaflet/dist/images/marker-shadow.png?");
 
 /***/ }),
 
