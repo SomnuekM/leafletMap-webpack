@@ -1,7 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font: 15px/20px 'K2D', sans-serif;
+}
+
 #map {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.clearfix {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.clearfix::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.clearfix::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
+.clearfix::-webkit-scrollbar-thumb {
+    scrollbar-color: #d4aa70 #e4e4e4;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgb(206, 175, 118);
+    /* creates padding around scroll thumb */
+}
+
+.clearfix a {
+    transition: 0.3s;
+}
+
+.clearfix a:hover {
+    color: #e27319;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+
+/* Speed Color 🚛🚒🚚🚘🚙🚕🚗 */
+
+ol {
+    counter-reset: li;
+    /* Initiate a counter */
+    list-style: none;
+    /* Remove default numbering */
+    *list-style: decimal;
+    /* Keep using default numbering for IE6/7 */
+    padding: 0;
+    margin-bottom: 0.5em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+ol ol {
+    margin: 0 0 0 2em;
+    /* Add some left margin for inner lists */
+}
+
+.rectangle-list a {
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    padding: .2em .2em .2em .6em;
+    *padding: .2em;
+    margin: .5em 0 .5em 2.5em;
+    background: rgb(236, 235, 235);
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover {
+    background: #eee;
+}
+
+.rectangle-list a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #838282;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.rectangle-list a:after {
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover:after {
+    left: -.5em;
+    border-left-color: #fa8072;
+}
+
+@media screen and (max-height: 753px) {
+    .clearfix {
+        padding-top: 0px;
+    }
 }

@@ -12,6 +12,28 @@
 
     <div id="map"></div>
 
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <div class='clearfix' id="mySidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="form-group">
+            <br>
+            <h3>Point History (Color By Speed)</h3>
+            <a href='https://raw.githubusercontent.com/SomnuekM/Leaflet_MultiPoint-Color-By-Speed/main/dataJson/demoGeoJson.geojson' target='_blank'>
+                    Demo Data
+                </a>
+        </div>
+
+
+        <div id="speedRange"></div>
+
+        <div id="results"></div>
+
+
+    </div>
+
+
     <script src="dist/bundle.js"></script>
 
 </body>
